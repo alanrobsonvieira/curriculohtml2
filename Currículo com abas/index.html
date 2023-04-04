@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlanVieira</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+
+            height: 700px;
+            width: 1009px;
+            background-color: rgb(0, 0, 0);
+            animation-name: example;
+            animation-duration: 50s;
+            font-family: Arial, sans-serif;
+
+
+        }
+
+
+        @keyframes example {
+            0% {
+                background-color: rgb(14, 0, 104);
+            }
+
+            25% {
+                background-color: rgb(109, 2, 109);
+            }
+
+            50% {
+                background-color: rgb(20, 122, 0);
+            }
+
+            75% {
+                background-color: rgb(87, 0, 0);
+            }
+
+            100% {
+                background-color: rgb(0, 39, 10);
+            }
+        }
+
+        img {
+
+            border: 2px solid rgb(67, 255, 130);
+            margin-inline-start: 450px;
+
+        }
+
+
+
+
+        .nav_tabs {
+
+            width: auto;
+            height: 400px;
+            margin: 10px;
+            background-color: white;
+            position: absolute;
+
+        }
+
+
+
+        .nav_tabs ul {
+
+            list-style: none;
+
+
+        }
+
+
+        .nav_tabs ul li {
+
+            float: left;
+
+        }
+
+
+        .nav_tabs label {
+
+            width: auto;
+            padding: 10px;
+            margin: auto;
+            background-color: rgb(0, 4, 255);
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            font-size: 10px;
+
+        }
+
+        .rd_tabs:checked~label {
+
+            background-color: #e54e43;
+
+        }
+
+        .rd_tabs {
+
+            display: none;
+
+        }
+
+        .content {
+
+            border-top: 5px solid #e54e43;
+            background-color: rgb(193, 255, 157);
+            display: none;
+            margin-top: 5px;
+            position: absolute;
+            height: 350px;
+            width: 952px;
+            left: 0;
+
+
+        }
+
+
+
+        .linha {
+
+            display: flex;
+            flex-flow: row wrap;
+
+
+        }
+
+
+        .coluna-33 {
+
+            width: 33%;
+
+        }
+
+
+        .content article {
+
+            padding: 30px;
+            font-style: italic;
+            text-align: center;
+            color: rgb(0, 0, 0);
+
+
+        }
+
+        .rd_tabs:checked~.content {
+
+            display: block;
+        }
+
+
+
+        header {
+
+            margin-top: 30px;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            text-shadow: rgb(252, 252, 252) 0.1em 0.1em 0.2em
+        }
+
+
+
+        .pulse {
+            animation: pulse 0.7s infinite;
+            margin: 0 auto;
+            display: table;
+            margin-top: auto;
+            animation-direction: alternate;
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale(1);
+                -webkit-filter: brightness(100%);
+            }
+
+            100% {
+                -webkit-transform: scale(1.1);
+                -webkit-filter: brightness(200%);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            100% {
+                transform: scale(1.1);
+                filter: brightness(200%);
+            }
+        }
+
+
+        .footer {
+
+            background-color: blue;
+            text-align: center;
+            margin: 400px auto;
+            padding: 10px;
+
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="layout"></div>
+
+    <img src="img/FOTO.jpg" alt="foto" style="width:100px;height: 120px;">
+
+
+    <header>
+        <h1 style="color: rgb(255, 0, 0);" align="center">Alan Robson Vieira</h1>
+    </header>
+
+
+    <nav class="nav_tabs">
+        <ul>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="dados">
+                <label for="dados">Dados Pessoais</label>
+                <div class="content">
+
+                    <article>
+                        <br>
+                        <br>
+                        Rua Jacomo Zanchetta, 164 <br>
+                        Bairro: Sítio Paredão <br>
+                        Cidade: Ferraz de Vasconcelos <br>
+                        CEP 0850-010 - São Paulo <br>
+                        Idade: 46 Anos – Brasileiro <br>
+                        Filhos 02(dois) <br>
+                        Telefones particular <br>
+                        (11)9-5915-6408 whatsapp <br>
+                        <br>
+                        <strong style="color: red;">Disponível para viagens</strong>
+
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="fe">
+                <label for="fe">Graduações</label>
+                <div class="content" ;>
+
+                    <article>
+
+
+                        <h3>Formações em Andamento</h3>
+                        <br>
+                        Mestrando em Meio Ambiente (Término em 12/2022) <br>
+                        Pós-Graduação em Hipnoterapia Clínica (Término 8/2021) <br>
+                        Análise e desenvolvimento de sistema (Início Agosto 08/2021)<br>
+                        <br>
+                        <h3>Formações Concluídas</h3>
+                        <br>
+                        Pós-Graduação em Psicopedagogia e Neurociência <br>
+                        Gestão Ambiental Universidade Braz Cubas
+                        <br>
+                        <br>
+                        <h3>Formações Incompletas</h3>
+                        <br>
+                        Pós-Graduação SENAC
+                        Sistemas de Gestão Integrados da Qualidade (3 semestres)
+                        <br>
+                        Universidade de Guarulhos
+                        Letras Tradutor Intérprete (8 semestres)
+
+
+                    </article>
+
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="fc">
+                <label for="fc">Cursos Profissionalizantes</label>
+                <div class="content">
+                    <article>
+
+                        <br>
+                        <b> Examinador de Transito / Instrutor de Trânsito / Instrutor de Empilhadeira Condutores de
+                            Veículos deTransporte Escolar /
+                            Condutores de Veículos em Emergência / Condutores de Veículos de Transporte Coletivo de
+                            Passageiros / Operador de Empilhadeira
+                            Curso Especial e Treinamento e Orientação para Condutaxi / Conceitos de Direção Defensiva e
+                            Segura / Primeiros Socorros para Motoristas /
+                            Direção Segura para Terceira Idade / Transporte Cadeirante e Mobilidade Reduzida / O
+                            Processo de Formação do Condutor e o Papel do CFC /
+                            Trânsito Consciente (Secretaria de Segurança Pública Polícia Militar do Estado de São Paulo)
+                            / Vida no Trânsito Campo Grande;
+                            Álcool e Outras Drogas e a Segurança No Trânsito / Jovem Condutor e a Responsabilidade da
+                            Escolha / Violência no Trânsito Causas e Medidas de Redução
+                            Municipalização do Trânsito Procedimentos e Benefícios / Família Em Trânsito Cidadania e
+                            Qualidade de Vida / Transporte para Todos Mobilidade
+                            Reduzida / Inclusão da Pessoa com Deficiência e Mobilidade Reduzida / Educação para Trânsito
+                            Sustentabilidade e Trânsito / Palestra Segurança no Trânsito
+                            e Qualidade de Vida / Palestra Acessibilidade e Mobilidade Urbana / Palestra
+                            Sustentabilidade no Trânsito / Palestra Mobilidade
+                            Urbana e Cultura da Paz Pedalar com Segurança / Atendimento Eficaz</b>
+
+                    </article>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="cd">
+                <label for="cd">Cursos de Curta Duração</label>
+                <div class="content">
+                    <article>
+
+                        <br>
+                        <br>
+
+                        <h2>Psicologia Aplicada à Reabilitação
+                            <br>
+                            <br>
+
+                            Psicologia do Trabalho
+                            <br>
+                            <br>
+                            Saúde Ocupacional
+
+                        </h2>
+
+                    </article>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="rq">
+                <label for="rq">Resumo das Qualificações</label>
+                <div class="content">
+                    <article>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <strong>
+                            <h2>Carreira desenvolvida como Educador e Instrutor nos processos <br>
+                                de aprendizagem e ensino profissionalizante</h2>
+                        </strong>
+
+                    </article>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="ep">
+                <label for="ep">Experiências Profissionais</label>
+                <div class="content">
+
+
+
+                    <article>
+
+
+                        <div class="linha">
+
+
+                            <div class="coluna-33" style="background-color: rgb(80, 219, 98);">
+                                <br>
+                                <br>
+
+                                <h2>Orgãos Publicos</h2>
+                                <br>
+                                Detran - SP <br>
+                                Departamento de Transporte Público <br>
+                                Secretaria da Educação Governo do Estado de São Paulo
+                                <br>
+                                <br>
+                                <strong style="color: #e54e43;">Professor</strong>
+                                <br>
+                                <br>
+
+
+
+                            </div>
+                            <div class="coluna-33" style="background-color: rgb(2, 177, 26);">
+
+                                <br>
+
+                                <h2>Empresas Privadas</h2>
+                                <br>
+
+                                Centro de Formação A Moraes & Garcia <br>
+                                Centro de Formação A Mota Melo LTDA <br>
+                                Centro de Formação B Objetivo LTDA <br>
+                                Centro de Formação B José Bonifácio <br>
+                                Centro de Formação B Roblles LTDA <br>
+                                Centro de Formação A Estilos LTDA<br>
+                                Centro de Formação A Ideal LTDA <br>
+
+                                SATA- Transportes Aeros SA <br>
+                                Leão e Jetex SA <br>
+                                Cristaleria Royal SA
+                                <br>
+                                <br>
+
+                            </div>
+
+
+                            <div class="coluna-33" style="background-color: rgb(88, 219, 105);">
+
+                                <br>
+                                <br>
+
+                                <h2>Empresa Internacional</h2> <br>
+
+                                Driver Labour Hire (New Zealand)
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="oeh">
+                <label for="oeh">Outras Experiencias & Habilidades</label>
+                <div class="content">
+                    <article>
+
+                        <br>
+                        <br>
+                        <h2> Outras Experiências e Habilidades</h2>
+                        <br>
+
+
+                        Músico Instrumentista <br>
+                        Montagem e Manutenção de Hardware Desktop e Notebooks <br>
+                        Cabeleireiro <br>
+                        Letrista <br>
+                        Construção Civil <br>
+                        Limpador de Piscina <br>
+
+
+                    </article>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="nt">
+                <label for="nt">Nota</label>
+                <div class="content">
+                    <article>
+
+                        <br>
+                        <br>
+
+                        <h3 style="text-align: center;">
+                            “Primeiramente quero agardecer pela oportunidade e dizer que eu estou mui interessado em
+                            fazer parte dessa renomada
+                            instituição, espero que possamos nos conhecer e ainda mais que eu venha fazer parte deste
+                            grupo; colaborando,
+                            criando, fortalecendo e ajudando àqueles que queiram contar comigo. Ressalto ainda que quero
+                            agregar meus
+                            conhecimentos e experiências em prol desta organização bem como adquirir novos. No entanto
+                            estou sempre em busca
+                            de novas oportunidades e crescimento pessoal para se tornar cada vez mais bem-sucedido,
+                            preparado e integro em tudo que faço”.
+                            <br>
+                            Obrigado!!!
+                        </h3>
+                        <br>
+                    </article>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="footer">
+
+        <a href="https://outlook.live.com/owa/" class="pulse">
+            <h3 style="color: white;">seven.em@hotmail.com</h3>
+        </a>
+
+    </div>
+
+
+
+</body>
+
+</html>
